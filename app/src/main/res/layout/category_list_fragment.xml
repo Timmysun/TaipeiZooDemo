@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.demo.tpzoo.ui.IntroductionViewModel" />
+
+        <variable
+            name="adapter"
+            type="com.demo.tpzoo.ui.CategoryListAdapter" />
+
+        <variable
+            name="layoutManager"
+            type="androidx.recyclerview.widget.LinearLayoutManager" />
+    </data>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:adapter="@{adapter}"
+        app:layoutManager="@{layoutManager}" />
+</layout>

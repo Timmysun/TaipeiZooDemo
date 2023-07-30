@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/white"
+            app:crop="@{false}"
+            app:loadImageIcon="@{category.picUrl}">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+            <ProgressBar
+                android:id="@+id/pb_progressbar"
+                style="@android:style/Widget.DeviceDefault.ProgressBar.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:text="@{@string/area_category(category.category)}"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:text="@{@string/area_memo(category.memo)}"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:text="@{category.info}" />
+
+    </LinearLayout>
+
+    <data>
+
+        <variable
+            name="category"
+            type="com.demo.tpzoo.model.CategoryInfo" />
+    </data>
+</layout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">台北市立動物園</string>
+    <string name="area_category">分類: %1$s</string>
+    <string name="area_memo">備註: %1$s</string>
+</resources>

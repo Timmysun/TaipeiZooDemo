@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Taipei Zoo</string>
+    <string name="area_category">Category: %1$s</string>
+    <string name="area_memo">Memo: %1$s</string>
+</resources>
